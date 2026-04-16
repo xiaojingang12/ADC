@@ -1,0 +1,74 @@
+{
+  "config": {
+    "question_path": "/mnt/data/shansong/ADC/ADC/is_data_copy/2_data/simple_QA/S_09/Question.json",
+    "response_path": "/mnt/data/shansong/GraphRAG/2_data_wor/Collected/HippoRAG/2_data/simple_QA/S_09/results.json",
+    "save_path": "/home/shansong/GraphRAG/eval_adc/hi_simple_09.json",
+    "model": "gpt-5.1-2025-11-13",
+    "base_url": "https://api.ai-gaochao.cn/v1"
+  },
+  "summary": {
+    "sample_count": 1,
+    "success_count": 1,
+    "failure_count": 0,
+    "total_tokens": 1127,
+    "prompt_tokens": 1107,
+    "completion_tokens": 20,
+    "sample_time_seconds_sum": 2.981,
+    "api_time_seconds_sum": 2.9808,
+    "avg_total_tokens_per_sample": 1127.0,
+    "avg_prompt_tokens_per_sample": 1107.0,
+    "avg_completion_tokens_per_sample": 20.0,
+    "avg_sample_time_seconds": 2.981,
+    "avg_api_time_seconds": 2.9808,
+    "batch_wall_clock_seconds": 2.982
+  },
+  "results": [
+    {
+      "question": "How do cooperative and non-cooperative approaches to device-based localization influence the interrelationships of information as represented in the Equivalent Fisher Information Matrix (EFIM)?",
+      "response": "The interrelationships of information in the Equivalent Fisher Information Matrix (EFIM) are significantly influenced by the cooperative and non-cooperative approaches to device-based localization. These approaches affect how information is shared, processed, and utilized in the context of integrated sensing and communication (ISAC) systems. Here's a detailed explanation of how these approaches influence the EFIM:\n---\n### **1. Non-Cooperative Localization and EFIM**\nIn **non-cooperative localization**, each agent (or node) localizes itself independently using signals from anchors. This approach typically involves:\n- **Independent signal processing**: Each agent processes its own received signals without sharing information with other agents.\n- **Limited information sharing**: There is no direct exchange of information between agents, which means that the information used for localization is limited to the signals received from the anchors.\n#### **Impact on EFIM:**\n- **Reduced information diversity**: Since each agent operates independently, the EFIM may not fully capture the diversity of information available across the network. This can lead to suboptimal estimation performance.\n- **Local Fisher Information**: The EFIM in this case is based on the local Fisher Information Matrix (FIM) of each agent, which may not account for the global information that could be derived from cooperative interactions.\n- **Higher estimation variance**: The lack of cooperation can result in higher variance in the estimated parameters, as the EFIM does not account for the potential benefits of combining information from multiple sources.\n---\n### **2. Cooperative Localization and EFIM**\nIn **cooperative localization**, agents share information with each other, either through direct communication or by using signals from other agents. This approach typically involves:\n- **Shared signal processing**: Agents exchange information, such as estimated positions or signal measurements, to improve localization accuracy.\n- **Enhanced information sharing**: The use of signals from other agents allows for more accurate and robust estimation of the target's position.\n#### **Impact on EFIM:**\n- **Increased information diversity**: The EFIM in cooperative localization can incorporate information from multiple sources, including signals from other agents. This leads to a more comprehensive representation of the information available for estimation.\n- **Improved estimation accuracy**: The EFIM can better capture the relationships between different parameters, leading to more accurate and reliable estimates.\n- **Reduced estimation variance**: By combining information from multiple agents, the EFIM can reduce the variance of the estimated parameters, leading to improved localization performance.\n---\n### **3. Interrelationships of Information in EFIM**\nThe EFIM is a key metric in estimation theory that quantifies the amount of information available for parameter estimation. It is defined as the expected value of the product of the gradient of the log-likelihood function with respect to the parameters of interest.\n#### **Non-Cooperative Localization:**\n- The EFIM is based on the local FIM of each agent, which may not fully capture the global information available in the network.\n- The EFIM may not account for the potential benefits of combining information from multiple agents, leading to suboptimal performance.\n#### **Cooperative Localization:**\n- The EFIM can incorporate information from multiple agents, leading to a more accurate representation of the information available for estimation.\n- The EFIM can better capture the relationships between different parameters, leading to improved estimation accuracy and reduced variance.\n---\n### **4. Summary**\n- **Non-Cooperative Localization** results in a limited EFIM that may not fully capture the information available in the network, leading to suboptimal estimation performance.\n- **Cooperative Localization** enhances the EFIM by incorporating information from multiple sources, leading to improved estimation accuracy and reduced variance.\n- The choice between non-cooperative and cooperative localization significantly influences the EFIM and, consequently, the performance of the localization system.\nIn summary, the cooperative and non-cooperative approaches to device-based localization have a direct impact on the EFIM, with cooperative localization generally leading to better performance due to the enhanced information sharing and processing capabilities.",
+      "ground_truth": [
+        "block-diagonal EFIM",
+        "information independent among agents",
+        "non-block-diagonal EFIM",
+        "information highly interrelated among agents"
+      ],
+      "common_errors": [],
+      "removed_overlap_topics": [],
+      "predicted_topics": [
+        "information independent among agents",
+        "information highly interrelated among agents"
+      ],
+      "coverage": 2,
+      "recall": 0.5,
+      "precision": 1.0,
+      "f1": 0.6667,
+      "hallucination": 0.0,
+      "covered_topics": [
+        "information independent among agents",
+        "information highly interrelated among agents"
+      ],
+      "missed_ground_truth": [
+        "block-diagonal EFIM",
+        "non-block-diagonal EFIM"
+      ],
+      "hallucinated_topics": [],
+      "unmatched_predicted_topics": [],
+      "raw_response": {
+        "predicted_topics": [
+          "information independent among agents",
+          "information highly interrelated among agents"
+        ]
+      },
+      "api_error": null,
+      "usage_metrics": {
+        "sample_time_seconds": 2.981,
+        "api_time_seconds": 2.9808,
+        "total_tokens": 1127,
+        "prompt_tokens": 1107,
+        "completion_tokens": 20,
+        "retry_count": 0,
+        "success": true
+      }
+    }
+  ]
+}
