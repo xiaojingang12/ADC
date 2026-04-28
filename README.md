@@ -5,8 +5,8 @@
 <p><em>A benchmark for document-level, synthesis-heavy question answering in RAG systems.</em></p>
 
 [![Paper](https://img.shields.io/badge/%F0%9F%93%84%20Paper-arXiv%20coming%20soon-b31b1b?style=flat-square)](#)
-[![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-Hugging%20Face%20coming%20soon-f9ab00?style=flat-square)](#)
-[![Webpage](https://img.shields.io/badge/%F0%9F%8C%90%20Webpage-coming%20soon-2563eb?style=flat-square)](#)
+[![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-Hugging%20Face-f9ab00?style=flat-square)](https://huggingface.co/datasets/sam234990/ADC)
+[![Webpage](https://img.shields.io/badge/%F0%9F%8C%90%20Webpage-Project%20Page-2563eb?style=flat-square)](https://xinyangsally.github.io/adc-benchmark/)
 
 </div>
 
@@ -99,13 +99,17 @@ We are gradually cleaning up and releasing:
 - reproducible experiment pipelines
 - documentation for running baselines
 
-At the moment, the most complete public piece in this repo is the evaluation code under [`eval_adc/`](./eval_adc).
+At the moment, the repository includes dataset construction scripts, refinement code, evaluation utilities, figures, and exploratory notebooks.
 
 ## Repository Layout
 
 ```text
 ADC/
-├── eval_adc/      # ADC evaluation scripts and aggregation utilities
+├── Generate/      # question generation and data construction scripts
+├── Refine/        # question/answer refinement and evidence alignment code
+├── eval_adc/      # topic-set-based ADC evaluation scripts
+├── eval_h2h/      # head-to-head evaluation utilities
+├── figures/       # figures used in the paper and README
 ├── notebooks/     # exploratory analysis and helper notebooks
 └── README.md
 ```
@@ -113,8 +117,8 @@ ADC/
 ## Planned Links
 
 - `arXiv`: [TBD]
-- `Hugging Face dataset`: [TBD]
-- `Webpage`: [TBD]
+- `Hugging Face dataset`: [sam234990/ADC](https://huggingface.co/datasets/sam234990/ADC)
+- `Webpage`: [adc-benchmark](https://xinyangsally.github.io/adc-benchmark/)
 
 ## Citation
 
