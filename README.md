@@ -6,7 +6,7 @@
 
 [![Paper](https://img.shields.io/badge/%F0%9F%93%84%20Paper-arXiv%20coming%20soon-b31b1b?style=flat-square)](#)
 [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-Hugging%20Face-f9ab00?style=flat-square)](https://huggingface.co/datasets/sam234990/AURA-QA)
-[![Webpage](https://img.shields.io/badge/%F0%9F%8C%90%20Webpage-Project%20Page-2563eb?style=flat-square)](https://xinyangsally.github.io/adc-benchmark/)
+[![Webpage](https://img.shields.io/badge/%F0%9F%8C%90%20Webpage-Project%20Page-2563eb?style=flat-square)](https://xinyangsally.github.io/aura-benchmark/)
 
 </div>
 
